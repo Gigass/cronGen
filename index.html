@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap.min.css" rel="stylesheet">
+	<link href="font/font-awesome.min.css" rel="stylesheet">
+	<link href="cronGen.css" rel="stylesheet">
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="later.min.js"></script>
+    <title></title>
+    <script type="text/javascript">
+	$(function() {
+	    $("#cron").cronGen({
+	    	direction : 'bottom'
+	    });
+	  
+	});
+</script>
+</head>
+    <body>
+	<div class="container">
+		<form role="form" class="form-inline" onsubmit="return false;">
+			<div class="form-group">
+				<label for="cron">Cron</label>
+				<input id="cron" class="form-control" onchange="test()" />
+			</div>
+		</form>
+	</div>       
+
+        <script src="cronGen.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+    </body>
+</html>
