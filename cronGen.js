@@ -210,10 +210,12 @@
             $(monthly1).append("每月 允许的通配符[, - * /]");
             $(monthly1).appendTo(monthlyTab);
             
+            /*
             var monthly2 = $("<div/>",{"class":"line"});
             $("<input/>",{type : "radio", value : "2", name : "month"}).appendTo(monthly2);
             $(monthly2).append("不指定");
             $(monthly2).appendTo(monthlyTab);
+            */
             
             var monthly3 = $("<div/>",{"class":"line"});
             $("<input/>",{type : "radio", value : "3", name : "month"}).appendTo(monthly3);
